@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Victoria V](https://up.htmlacademy.ru/htmlcss/25/user/963919).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 

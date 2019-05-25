@@ -2,11 +2,121 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
+    <title> Глейси.Интернет-магазин мороженого</title>
   </head>
   <body>
+    <header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+        <nav class="main-navigation">
+        <a class="main-header-logo"><img src="logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глэйси"></a>
+          <ul class="component-navigation">
+          <li class="down"> <a href="#">Каталог</a>
+            <ul class="sub-menu"><!--Выпадающее меню нужно работать с CSS чтобы скрыть-->
+            <li><a href="#"><b>Новинки</b></a></li>
+            <li><a href="#">Сливочное</a></li>
+           <li><a href="#">Щербеты</a></li>
+           <li><a href="#">Фруктовый лед</a></li>
+           <li><a href="#">Мелорин</a></li>
+           </ul>
+         </li>
+          <li> <a href="">Оплата и доставка</a> </li>
+          <li> <a href="">О Компании</a></li>
 
-  </body>
+
+         <span class="users-search" aria-label="Строка поиска"></span>
+           <!--Форма поиска (будет расскомментирована позже)
+           <form class="users-search">
+            <input type="search" placeholder="Что ищем?"></input>
+            <button type="submit" ></button>
+          </form>-->
+
+
+        <ul class="users-registration">
+        <li class="login-link"><a href="#">Вход</a></li>
+        <!--Форма входа (будет расскомментирована позже)
+       <form class="users-vhod">
+     <input type="email" placeholder="Электронная почта">
+     <input type="password" placeholder="Пароль">
+   <a class="button-vhod">Войти</<a>
+   <a href="#">Забыли пароль?</a>
+   <a href="#">Новая регистрация</a>
+   </form>
+    -->
+
+      </ul>
+
+        <ul class="users-navigation">
+        <li class="korzina-link>"><a href="#" class="visually-hidden">Корзина</a>
+      </ul>
+      </nav>
+    </header>
+    <main class="container">
+    <section class="o-kompanii-1">
+      <h1 class="main-header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h1>
+    <p><a href="kartinka-morozhenoe.svg" width="49" height="49"></a>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+    <p><a href="kartinka-list.svg" width="49" height="49"></a>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+    <p><a href="kartinka-korova.svg" width="49" height="49"></a>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+    <p><a href="kartinka-gradusnik.svg" width="49" height="49"></a>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+   </section>
+   <article class="features">
+     <p>Новое в нашем блоге</p>
+   <header class="article-features-header">
+     <a href="article.html"><h2>10 способов сервировки фруктовых щербетов к столу</h2></a>
+   </header>
+   <footer class="article-features-footer"></footer>
+   </article>
+   <section class="rassilka">
+    <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+    <input type="text" name="Электронная почта" placeholder="Электронная почта"></input>
+    <button type="submit">Подписаться</button>
+   </section>
+   <secion class="location">
+     <img src="map.png" alt="карта с местоположением"><!--Возможно нужно делать как фон-->
+     <img src="morozhenoe-ukazatel.svg" alt="указатель местоположения">
+     <div class="сontact-info">
+     <p>Адрес главного офиса<br>
+    и офлайн-магазина:<br>
+    <b>ул. Большая Конюшенная<br>
+    19/8, Санкт-Петербург</b></p>
+
+    <p>Для заказов по телефону:<br>
+      <b>8 812 450-25-25</b><br>
+     (с 10 до 20 ежедневно)</p>
+     <a href="#" class="button-form-contact">Форма обратной связи</a>
+   </div>
+    </section>
+    <!-- Форма обратной связи будет расскомментирована позже
+    <form class="form-obr-sv">
+    <b>Мы обязательно вам ответим!<b>
+    <input type="text" placeholder="Как вас зовут?">
+    <input type="email" placeholder="Ваша почта для ответа">
+    <input type="text" placeholder="Напишите что-нибудь..."Ю
+    <button type="submit">Отправить</button>
+    </form>
+    -->
+    </main>
+    <footer>
+    <div class="section-social-site">
+     <ul class="social-site">
+       <li><a href="#" class="social-button" aria-label="Твиттер"></a></li>
+       <li><a href="#" class="social-button" aria-label="Инстаграм"></a></li>
+       <li><a href="#" class="social-button" aria-label="Фэйсбук"></a></li>
+       <li><a href="#" class="social-button" aria-label="Вконтакте"></a></li>
+     </ul>
+   </div>
+
+     <ul class="dop-info">
+       <li><a href="#">Для поставщиков</a></li>
+       <li><a href="#">О производстве</a></li>
+       <li><a href="#">Наши документы</a></li>
+       <li><a href="#">Экологические стандарты</a></li>
+     </ul>
+
+
+       <div class="footer-copyright">
+         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="htmlacademy-logo" alt="Логотип htmlacademy"></a>
+         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2019</p>
+       </div>
+       </footer>
+</body>
 </html>

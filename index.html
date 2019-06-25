@@ -48,9 +48,11 @@
               </svg>
             </a>
             <div class="user-navigation-tooltip search-form">
-              <form class="user-search-form">
-               <input type="search" placeholder="Что ищем?">
+              <form class="user-search-form" method="get" action="#">
+               <label for="tooltip-search-line" class="visually-hidden">Строка поиска</label>
+               <input type="search" name="search-line" value="your-search-query" placeholder="Что ищем?" id="tooltip-search-line">
                <button type="submit" aria-label="Строка поиска"></button>
+               <button type="button">Закрыть</button>
               </form>
             </div>
         </li>
@@ -65,16 +67,19 @@
             Вход
           </a>
           <div class="user-navigation-tooltip login-form">
-            <form class="user-login">
-              <input type="email" placeholder="Электронная почта">
-              <input type="password" placeholder="Пароль">
-              <a class="button-login">Войти</a>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+            <form class="user-login" action="" method="post">
+              <label for="login-email">Электронная почта</label>
+              <input type="email" name="email" value="your-email" placeholder="Электронная почта" id="login-email">
+              <label for="login-password">Электронная почта</label>
+              <input type="password" name="password" value="your-password" placeholder="Пароль" id="login-password">
+              <a href="" class="button-login">Войти</a>
+              <a href="#" class="restore">Забыли пароль?</a>
+              <a href="#" class="check-in">Новая регистрация</a>
+              <button type="button">Закрыть</button>
             </form>
           </div>
         </li>
-        <li class="users-navigation-item">
+        <li class="user-navigation-item">
           <a href="#" class="user-navigation-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20">
               <g fill="#FFF">
@@ -143,12 +148,13 @@
       </a>
     </article>
 
-    <div class="container-subscrime">
-     <div class="subscrime-block">
-    ] <div class="subscrime-block-inner">
-       <p class="subscrime-block-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-       <form action="#" method="post" class="subscrime-form">
-        <input type="email" name="Электронная почта" placeholder="Электронная почта">
+    <div class="container-subscribe">
+     <div class="subscribe-block">
+      <div class="subscribe-block-inner">
+       <p class="subscribe-block-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+       <form action="#" method="post" class="subscribe-form">
+        <label for="subscribe-email" class="visually-hidden">Электронная почта</label>
+        <input type="email" value="your-email" name="email" placeholder="Электронная почта" id="subscribe-email">
         <button type="submit">Подписаться</button>
        </form>
       </div>
@@ -240,12 +246,16 @@
     </div>
   </footer>
     <div class="feedback-block-form">
-     <form class="feedback-form">
+     <form class="feedback-form" method="post" action="">
       <b>Мы обязательно вам ответим!</b>
-      <input type="text" placeholder="Как вас зовут?">
-      <input type="email" placeholder="Ваша почта для ответа">
-      <input type="text" placeholder="Напишите что-нибудь...">
+      <label for="feedback-name" class="visually-hidden"></label>
+      <input type="text" name="name" value="what-is-your-name" id="feedback-name" placeholder="Как вас зовут?">
+      <label for="feedback-email" class="visually-hidden"></label>
+      <input type="email" name="email" value="your-email" id="feedback-email" placeholder="Ваша почта для ответа">
+      <label for="feedback-text" class="visually-hidden"></label>
+      <input type="text" name="text" value="write-something" id="feedback-text" placeholder="Напишите что-нибудь...">
       <button type="submit">Отправить</button>
+
      </form>
     </div>
 </body>

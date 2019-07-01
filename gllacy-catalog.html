@@ -52,7 +52,6 @@
                <label for="tooltip-search-line" class="visually-hidden">Строка поиска</label>
                <input type="search" name="search-line" value="" placeholder="Что ищем?" id="tooltip-search-line">
                <button type="submit" aria-label="Строка поиска"></button>
-               <button type="button">Закрыть</button>
               </form>
             </div>
         </li>
@@ -69,13 +68,12 @@
           <div class="user-navigation-tooltip login-form">
             <form class="user-login" action="" method="post">
               <label for="login-email">Электронная почта</label>
-              <input type="email" name="email" value="" placeholder="Электронная почта" id="login-email">
+              <input type="email" name="email" placeholder="Электронная почта" id="login-email">
               <label for="login-password">Электронная почта</label>
-              <input type="password" name="password" value="" placeholder="Пароль" id="login-password">
-              <a href="" class="button-login">Войти</a>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
-              <button type="button">Закрыть</button>
+              <input type="password" name="password" placeholder="Пароль" id="login-password">
+              <button type="submit" class="button-login">Войти</button>
+              <a href="#" class="restore">Забыли пароль?</a>
+              <a href="#" class="check-in">Новая регистрация</a>
             </form>
           </div>
         </li>
@@ -152,9 +150,23 @@
             <option class="filter-option" value="fat-sorting">по жирности</option>
           </select>
         </fieldset>
-        <fieldset>
-          <legend>Цена:100руб.-500руб.:</legend>
-          <input type="range" min="100" max="500" step="5">
+        <fieldset class="filter-item">
+         <legend>Цена:</legend>
+            <div class="range-filter">
+              <div class="price-control">
+                <label class="min-price">-<input name="min-price" type="text" value="0"></label>
+                <label class="max-price"><input name="max-price" type="text" value="1500"></label>
+              </div>
+            </div>  
+            <div>
+            <div class="range-control">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>

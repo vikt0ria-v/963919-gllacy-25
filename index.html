@@ -52,7 +52,6 @@
                <label for="tooltip-search-line" class="visually-hidden">Строка поиска</label>
                <input type="search" name="search-line" value="your-search-query" placeholder="Что ищем?" id="tooltip-search-line">
                <button type="submit" aria-label="Строка поиска"></button>
-               <button type="button">Закрыть</button>
               </form>
             </div>
         </li>
@@ -69,13 +68,12 @@
           <div class="user-navigation-tooltip login-form">
             <form class="user-login" action="" method="post">
               <label for="login-email">Электронная почта</label>
-              <input type="email" name="email" value="your-email" placeholder="Электронная почта" id="login-email">
+              <input type="email" name="email" placeholder="Электронная почта" id="login-email">
               <label for="login-password">Электронная почта</label>
-              <input type="password" name="password" value="your-password" placeholder="Пароль" id="login-password">
-              <a href="" class="button-login">Войти</a>
+              <input type="password" name="password" placeholder="Пароль" id="login-password">
+              <button type="submit" class="button-login">Войти</button>
               <a href="#" class="restore">Забыли пароль?</a>
               <a href="#" class="check-in">Новая регистрация</a>
-              <button type="button">Закрыть</button>
             </form>
           </div>
         </li>
@@ -154,10 +152,11 @@
        <p class="subscribe-block-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
        <form action="#" method="post" class="subscribe-form">
         <label for="subscribe-email" class="visually-hidden">Электронная почта</label>
-        <input type="email" value="your-email" name="email" placeholder="Электронная почта" id="subscribe-email">
+        <input type="email" name="email" placeholder="Электронная почта" id="subscribe-email">
         <button type="submit">Подписаться</button>
        </form>
       </div>
+      <div class="subscribe-features"></div>
      </div>
     </div>
 
@@ -249,13 +248,13 @@
      <form class="feedback-form" method="post" action="">
       <b>Мы обязательно вам ответим!</b>
       <label for="feedback-name" class="visually-hidden"></label>
-      <input type="text" name="name" value="what-is-your-name" id="feedback-name" placeholder="Как вас зовут?">
+      <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
       <label for="feedback-email" class="visually-hidden"></label>
-      <input type="email" name="email" value="your-email" id="feedback-email" placeholder="Ваша почта для ответа">
+      <input type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа">
       <label for="feedback-text" class="visually-hidden"></label>
-      <input type="text" name="text" value="write-something" id="feedback-text" placeholder="Напишите что-нибудь...">
+      <textarea name="text" id="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
       <button type="submit">Отправить</button>
-
+      <button type="button">Закрыть</button>
      </form>
     </div>
 </body>
